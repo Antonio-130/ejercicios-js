@@ -32,10 +32,18 @@ Desde la raíz del repo:
 npm test
 ```
 
-Eso corre **todos** los tests. Para correr solo uno:
+Eso corre **todos** los tests.
+
+Para correr los de un solo ejercicio, pasá el archivo de test (con comodín):
 
 ```bash
-node --test nivel-1/01-sumar-hasta/
+node --test "nivel-1/01-sumar-hasta/*.test.js"
+```
+
+Y para un nivel entero:
+
+```bash
+node --test "nivel-3/**/*.test.js"
 ```
 
 Vas a ver, por cada ejercicio, si pasa o falla. Cuando la función esté bien, el test pasa.
